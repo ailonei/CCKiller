@@ -5,7 +5,17 @@ Linux attack defense scripts tool --- Linux CC攻击防御工具脚本
 
 ```
 curl -ko install.sh https://zhang.ge/wp-content/uploads/files/cckiller/install.sh?ver=1.0.8 && sh install.sh -i
+
+wget --no-check-certificate -O install.sh https://raw.githubusercontent.com/ailonei/CCKiller/master/install.sh && chmod +x install.sh && ./install.sh
 ```
+The Time interval : 20 s       #每20s检查一次系统请求情况
+
+The Forbidden Time: 600 s  #拉黑时长设为10分钟
+
+Adminstrator Email: root@localhost   #邮件对象设置为root@localhost（即关闭邮件发送）
+
+Connections Allow: 100      #单个IP并发限制为100
+
 
 2015-09-23 Ver 1.0.1：
 
